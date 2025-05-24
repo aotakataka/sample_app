@@ -31,7 +31,7 @@ group :development do
   gem "solargraph",          "0.53.4"
   gem "irb",                 "1.13.0"
   gem "repl_type_completor", "0.1.8"
-  gem "prism",               "1.2.0"
+  gem "prism",               "1.4.0"
 end
 
 group :test do
