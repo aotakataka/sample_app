@@ -1,3 +1,7 @@
+# ユーザーデータをすべて削除
+puts "Deleting all users..."
+User.delete_all
+
 # メインのサンプルユーザーを1人作成する
 User.create!(name:  "Example User",
              email: "example@railstutorial.org",
