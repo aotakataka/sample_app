@@ -89,6 +89,7 @@ Rails.application.configure do
     :password       => ENV['MAILGUN_SMTP_PASSWORD'],
     :domain         => host,
     :authentication => :plain,
+    :enable_starttls_auto => true,
   }
 
   # Ignore bad email addresses and do not raise email delivery errors.
