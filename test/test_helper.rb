@@ -6,7 +6,7 @@ Minitest::Reporters.use!
 
 class ActiveSupport::TestCase
   # 指定のワーカー数でテストを並列実行する
-  parallelize(workers: :number_of_processors)
+  parallelize(workers: 1)
   # test/fixtures/*.ymlのfixtureをすべてセットアップする
   fixtures :all
 
@@ -36,7 +36,7 @@ end
 module ActiveSupport
   class TestCase
     # Run tests in parallel with specified workers
-    parallelize(workers: :number_of_processors, with: :threads)
+    parallelize(workers: 1, with: :threads)
 
     # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
     fixtures :all
