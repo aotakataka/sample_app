@@ -23,7 +23,7 @@ gem "bootsnap",                   "1.16.0", require: false
 gem "concurrent-ruby",            "1.3.4"
 
 group :development, :test do
-  gem "sqlite3", "1.6.1"
+  gem "sqlite3", "2.7.0"
   gem 'reline', '0.5.10'
   gem "debug",   "1.7.1", platforms: %i[ mri mingw x64_mingw ]
 end
